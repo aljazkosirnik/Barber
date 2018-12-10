@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous" />
+
+  <title>Barber</title>
+</head>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <a class="navbar-brand" href="#top">Domov</a>
+      <a class="navbar-brand" href="#nega">Nega</a>
+      <a class="navbar-brand" href="#top">
+        <img src="/img/logo.png" width="70" height="48" class="d-inline-block align-top" alt="" /></a>
+      <a class="navbar-brand" href="#izdelki">Izdelki</a>
+      <a class="navbar-brand" href="#kontakt">Kontakt</a>
+    </div>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <div class="top">
+    <img src="img/first.jpg" class="img-fluid" alt="Responsive image" id="firstImg" />
+    <div class="text-top">
+      <h3 id="telefon">Telefon 01 / 258 258</h3>
+      <img src="img/logo-brezteksta.png" alt="logo" id="logoBrezteksta">
+      <h3 id="h3">Že od 1999</h3>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">Naroči se</button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Naroči se</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Ime in priimek</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Vnesi ime">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Telefon</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Vnesi telefonsko številko">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" id="pošljiButton">Pošlji</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nega">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/gel.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Gel za lase</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minus nesciunt
+                excepturi. Earum quasi ducimus exercitationem id, omnis molestias..</p>
+              <h5>Cena: 19,90€</h5>
+              <a href="#" class="btn">Dodaj v košarico</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/butter.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Pena za britje</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste nobis eveniet
+                praesentium nisi eius corporis quo officia error voluptatibus. Totam!</p>
+              <h5>Cena: 29,90€</h5>
+              <a href="#" class="btn">Dodaj v košarico</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/pomade.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Pomade</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nisi dolorem nihil iste
+                quis numquam laudantium, quisquam laboriosam esse iure!.</p>
+              <h5>Cena: 15,90€</h5>
+              <a href="#" class="btn">Dodaj v košarico</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testemony">
+    <div id="container">
+      <h1>Kaj menijo o nas stranke:</h1>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2 class="carousel-h2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, dolorum?</h2>
+            <p class="carousel-p">Žiga Dolgozadnjeime</p>
+          </div>
+          <div class="carousel-item">
+            <h2 class="carousel-h2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, laboriosam.</h2>
+            <p class="carousel-p">Matej Novak</p>
+          </div>
+          <div class="carousel-item">
+            <h2 class="carousel-h2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere?</h2>
+            <p class="carousel-p">Sašo Novak</p>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="google-maps">
+    <div class="google-maps-text">
+      <h2>Obiščite nas</h2>
+      <h4>Nek naslov 3, 1000 Ljubljana</h4>
+      <h5>Tel.: 01/ 00 00 00</h5>
+    </div>
+    <div class="google-maps-zemljevid">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2767.99286810082!2d14.499826515577869!3d46.0711833791128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476532bed8439c89%3A0xada6ad37f2e9d4ff!2sGigodesign!5e0!3m2!1ssl!2ssi!4v1543511455394"
+        width="500px" height="350px" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+</body>
+
+</html>
